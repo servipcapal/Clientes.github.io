@@ -1,9 +1,9 @@
 <?php
 /*Datos de conexion a la base de datos*/
-$db_host = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "test_empleados";
+$db_host = "http://sql10.freesqldatabase.com/";
+$db_user = "sql10720815";
+$db_pass = "FlxYESglgi";
+$db_name = "korovaclub";
 
 $con = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
