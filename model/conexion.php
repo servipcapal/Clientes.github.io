@@ -7,10 +7,10 @@
 
         # Atributos de la clase conexion
         private $mysqli = '';
-        private $usuario = 'root';
-        private $clave = '';
-        private $server = 'localhost';
-        private $db = 'login';
+        private $usuario = 'sql10720815';
+        private $clave = 'FlxYESglgi';
+        private $server = 'http://sql10.freesqldatabase.com/';
+        private $db = 'korovaclub';
 
 
         # Funcion que permite conectarnos a la base de datos
