@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="KOROVA">
+    <meta name="keywords" content="Club nocturno, Música, Techno, Club">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KOROVA CLUB</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/nowfont.css" type="text/css">
+    <link rel="stylesheet" href="css/rockville.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    
+    <style>
+        .open-button {                
+            color: white;
+            padding: 0px 50px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;            
+            right: 28px;
+            width: 80px;
+          }
+          
+          /* The popup form - hidden by default */
+          .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            align-items: center;
+            right: 500px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+          }
+          
+          /* Add styles to the form container */
+          .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+          }
+          
+          /* Full-width input fields */
+          .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+          }
+          
+          /* When the inputs get focus, do something */
+          .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+          }
+          
+          /* Set a style for the submit/login button */
+          .form-container .btn {
+           
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+          }
+          
+          /* Add a red background color to the cancel button */
+          .form-container .cancel {
+            background-color: red;
+          }
+          
+          /* Add some hover effects to buttons */
+          .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+          }
+        </style>
+    
+</head>
+
+<body>
+    
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <div class="IdModal" id="modal">
+        <input id="text" type="text" value="https://hogangnono.com" style="width:80%" /><br />
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>        
+    </div>
+    
+
+    <!--BOTON FLOTANTE-->
+
+    <a href="https://wa.me/+573155318639?text=Me%20gustaría%20hablar%20contigo" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/log90.png" alt="Korova Club"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">INICIO</a></li>
+                                <li><a href="videos.html" target="_blank"><img src="/img/live.png" alt="en vivo"></a></li>
+                                <li><a href="/emisoras.html">EMISORAS</a></li>
+                                <li><a href="#eventos">EVENTOS</a></li>
+                                <li><a href="#videos">VIDEOS</a></li>
+                                <li><a href="./contact.html">CONTACTO</a></li>
+                                <!--
+                                <li><a href="login.php" windows.open() onclick="closeForm()">Registrar</a></li>
+                                -->
+                                <li><a href="#IdModal" rel="modal:open">QR</a></li>
+                                
+                            </ul>
+                        </nav>
+                        <div class="header__right__social">
+                            <div class="footer__social__links">
+                                <a href="https://www.facebook.com/profile.php?id=100086087001243&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://youtube.com/@KasaKorovaClub?si=b4NAPfq-a_Ar5ojB" target="_blank"><i class="fa fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/korova.club?igsh=MTRrNzA0dHMweXk5ZQ==" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+        <marquee behavior="alternate" direction="right" style="color: rgb(247, 245, 245);size: 50px;padding-top: 2px;background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);text-transform: uppercase;" id="marquee">Jonas Koop! 14 de Junio/2024 /// ORBE + PSYK! 28 DE JUNIO/2024</marquee>
+
+    </header>
+
+        <div class="container-emisora">
+            
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-dba446d6-a33f-466a-b5ba-fc72ca563846" data-elfsight-app-lazy></div>
+            
+        </div>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <!--
+    <section class="hero spad set-bg" data-setbg="img/events/jonas.jpg">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero__text">
+                        <span>CLUB NOCTURNO</span> <BR></BR>
+                        <H2 id="LOGO"><SPan style="color: rgb(250, 97, 9);"><STRong>KOROVA CLUB</STRong></SPan></H2> 
+                        <p>Korova es un espacio para la libertad humana sin condicionamiento y no esta permitido la homofobia, el sexismo y el racismo</p>                        
+                        <a href="https://www.youtube.com/watch?v=w1eN8vyVFIM" class="play-btn video-popup"><i class="fa fa-play" allowfullscreen></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="linear__icon">
+            <i class="fa fa-angle-double-down"></i>
+        </div>
+    </section>
+    -->
+    <!-- Hero Section End -->
+
+
+    <!-- Event Section Begin junio-->
+
+    <section id="eventos" class="event spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Eventos Junio</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="event__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/7JUNIO.JPG">
+                                <div class="tag-date">
+                                    <span>Junio 07</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/8JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 08</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/9JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 09</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/14JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 14</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/15JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 15</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/16JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 16</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/21JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 21</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/22JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 22</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/23JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 23</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/28JUNIO.jpg">
+                                <div class="tag-date">
+                                    <span>Junio 28</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <HR></HR>
+
+    <!-- Event Section Begin mayo-->
+    <section id="eventos" class="event spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Eventos Mayo</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="event__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/02-04.jpg">
+                                <div class="tag-date">
+                                    <span>Mayo 02 al 04, 2024</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/09-11.jpg">
+                                <div class="tag-date">
+                                    <span>Mayo 09 al 11, 2024</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/16-18.jpg">
+                                <div class="tag-date">
+                                    <span>Mayo 16 al 18, 2024</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/23-25.jpg">
+                                <div class="tag-date">
+                                    <span>Mayo 23 al 25, 2024</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="event__item">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/3004.jpg">
+                                <div class="tag-date">
+                                    <span>Mayo 30 al 31, 2024</span>
+                                </div>
+                            </div>
+                            <div class="event__item__text">
+                                <h4>Line Up</h4>
+                                <p><i class="fa fa-map-marker"></i> Cali, Valle del Cauca</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Event Section End -->
+
+    <!-- About Section Begin -->
+    <section  class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="video">
+                        <iframe width="360" height="315" src="https://www.youtube.com/embed/68ugkg9RePc?si=-Pju_Rbobi1ciVRC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <h2><span style="color: red;">KASA Korova Club</span></h2>
+                            <h1>KKC</h1>
+                        </div>
+                        <p>Kasa Korova Club es un refugio subterráneo para los amantes de la música electrónica, donde el ritmo late en cada pulso de luz y cada reverberación del bajo. Al entrar, te sumerges en un mundo paralelo donde el tiempo se diluye y los sonidos te envuelven como una manta cálida. <BR></BR>
+
+                            El club está impregnado de una atmósfera íntima y clandestina, donde los muros oscuros y las luces tenues crean un ambiente perfecto para perderse en la música. Los murmullos de la multitud se mezclan con los ritmos enérgicos que brotan de los altavoces, creando una sinfonía de emociones y energía. <BR></BR>
+                            
+                            El sonido envolvente te abraza desde todos los ángulos, sumergiéndote en capas de melodías y texturas sonoras. Cada nota, cada eco, te transporta a un estado de trance donde la realidad se desvanece y solo queda el pulso constante de la música. <BR></BR>
+                            
+                            Kasa Korova es conocida como la casa del techno, un santuario donde los ritmos pulsantes y las líneas de bajo retumbantes reinan supremas. Los DJ y artistas que pisan su escenario son maestros en el arte de llevar a la audiencia a un viaje sonoro, guiándolos a través de paisajes sonoros futuristas y emocionantes.
+                            
+</p>
+                        <a href="tel:+573155318639" target="_blank" class="primary-btn">Comunícate!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section id="nosotros" class="services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="services__left set-bg" data-setbg="img/services/service-left.jpg">
+                        
+                        <a href="https://www.youtube.com/watch?v=drLxPlDk-qw" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="row services__list">
+                        <div class="col-lg-6 p-0 order-lg-1 col-md-6 order-md-1">
+                            <div class="service__item deep-bg">
+                                <img src="img/services/service-1.png" alt="">
+                                <h4>Korova</h4>
+                                <p>Una audiencia apasionada y receptiva, ávida de experiencias musicales memorables</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0 order-lg-2 col-md-6 order-md-2">
+                            <div class="service__item">
+                                <img src="img/services/service-2.png" alt="">
+                                <h4>Club Y Bar</h4>
+                                <p>Recuerda que debes ser mayor de 18 años para descubrir y disfruta de nuestro espacio.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0 order-lg-4 col-md-6 order-md-4">
+                            <div class="service__item deep-bg">
+                                <img src="img/services/service-4.png" alt="">
+                                <h4>DJ</h4>
+                                <p>Espacio ideal donde los artistas de música electrónica comparten su talento.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0 order-lg-3 col-md-6 order-md-3">
+                            <div class="service__item">
+                                <img src="img/services/service-3.png" alt="">
+                                <h4>Experiencia</h4>
+                                <p> La combinación de la música envolvente, el ambiente íntimo y la energía contagiosa de la multitud crea una atmósfera única.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Track Section Begin -->
+    <section id="playlist" class="track spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-title">
+                        <h2>Ultimos tracks</h2>
+                        <h1>Musica podcast</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="section-title">
+                        
+                        <a href="emisoras.html" class="primary-btn border-btn" target="_blank"><h2>Emisoras</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 p-0">
+                    <div class="track__content nice-scroll">
+                        <div class="single_player_container">
+                            <h4>Alan Fitzpatrick & Joyhauser </h4>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_1"
+                                data-url="music-files/Alan Fitzpatrick & Joyhauser - Craving.mp3"></div>
+                            <div class="jp-audio jp_container_1" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0"><i
+                                                class="fa fa-volume-down"></i></button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_player_container">
+                            <h4>Amelie Lens</h4>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_2"
+                                data-url="music-files/Amelie Lens - Breathe.mp3"></div>
+                            <div class="jp-audio jp_container_2" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0"><i
+                                                class="fa fa-volume-down"></i></button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_player_container">
+                            <h4>FJAAK</h4>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_3"
+                                data-url="music-files/FJAAK - Redemption.mp3"></div>
+                            <div class="jp-audio jp_container_3" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0"><i
+                                                class="fa fa-volume-down"></i></button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_player_container">
+                            <h4>Purpose Of Life</h4>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_4"
+                                data-url="music-files/Purpose Of Life.mp3"></div>
+                            <div class="jp-audio jp_container_4" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0"><i
+                                                class="fa fa-volume-down"></i></button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_player_container">
+                            <h4>When I Push _ Drumcode</h4>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_5"
+                                data-url="music-files/Eli Brown, Layton Giordani & OFFAIAH - When I Push _ Drumcode.mp3"></div>
+                            <div class="jp-audio jp_container_5" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0"><i
+                                                class="fa fa-volume-down"></i></button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_player_container">
+                            <h4>Mirazh</h4>
+                            <div class="jp-jplayer jplayer" data-ancestor=".jp_container_6"
+                                data-url="music-files/Thomas Schumacher & A.D.H.S. - Mirazh.mp3"></div>
+                            <div class="jp-audio jp_container_6" role="application" aria-label="media player">
+                                <div class="jp-gui jp-interface">
+                                    <!-- Player Controls -->
+                                    <div class="player_controls_box">
+                                        <button class="jp-play player_button" tabindex="0"></button>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="player_bars">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div>
+                                                    <div class="jp-play-bar">
+                                                        <div class="jp-current-time" role="timer" aria-label="time">0:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                                    </div>
+                                    <!-- Volume Controls -->
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" tabindex="0"><i
+                                                class="fa fa-volume-down"></i></button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value" style="width: 0%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 p-0">
+                    <div class="track__pic">
+                        <img src="img/SET.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Track Section End -->
+
+    <!-- Youtube Section Begin -->
+    <section id="videos" class="youtube spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>LIVE & VIDEOS</h2>
+                        <h1>Videos</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="youtube__item">
+                        <div class="youtube__item__pic set-bg" data-setbg="img/youtube/mulero.jpg">
+                            <a href="https://www.youtube.com/watch?v=FckHz08Z7PM" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                        </div>
+                        <div class="youtube__item__text">
+                            <h4>Ben Sims B2B Oscar Mulero - Stone Techno Festival 2022 - @ARTE Concert</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="youtube__item">
+                        <div class="youtube__item__pic set-bg" data-setbg="img/youtube/Gotshell.jpg">
+                            <a href="https://www.youtube.com/watch?v=QJVyt20BjLY" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                        </div>
+                        <div class="youtube__item__text">
+                            <h4>Gotshell live @ Under Place "Number Seven" 28.11.20 [#Techno] - Valle del Cauca, Colombia.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="youtube__item">
+                        <div class="youtube__item__pic set-bg" data-setbg="img/youtube/keith.png">
+                            <a href="https://www.youtube.com/watch?v=ODFcHgdC4gs" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                        </div>
+                        <div class="youtube__item__text">
+                            <h4>DROSSTREAM SPECIAL / KEITH BARRERA / 18 DE SEPTIEMBRE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Youtube Section End -->
+
+
+    <!-- Countdown Section Begin -->
+     
+    <section class="countdown spad set-bg" data-setbg="./img/events/orbepsyk.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="countdown__text">
+                        <h1>Eventos Junio 2024</h1>
+                        <h4>The House of the Techno</h4>
+                    </div>
+                    <div class="countdown__timer" id="countdown-time" data-final="2024/06/28">
+                        <div class="countdown__item" id="Dias">
+                            <span>días</span>
+                            <p>días</p>
+                        </div>
+                        <div class="countdown__item" id="hora">
+                            <span>Horas</span>
+                            <p>horas</p>
+                        </div>
+                        <div class="countdown__item" id="minuto">
+                            <span>18</span>
+                            <p>minutes</p>
+                        </div>
+                        <div class="countdown__item" id="segundo">
+                            <span>09</span>
+                            <p>seconds</p>
+                        </div>
+                    </div>
+                    <div class="buy__tickets">
+                        <a href="https://wa.link/iseipu" target="_blank" class="primary-btn">Comprar tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Countdown Section End -->
+
+    <!-- Footer Section Begin -->
+     <section>
+    <footer class="footer spad set-bg" data-setbg="./img/footer-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__address">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>Telèfono</p>
+                                <h6>+57 300 2984569</h6>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>Correo electrónico</p>
+                                <h6>kasakorova2023@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6">
+                    <div class="footer__social">
+                        <h2>kasa Korova Club</h2>
+                        <div class="footer__social__links">
+                            <a href="https://www.facebook.com/profile.php?id=100086087001243&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://youtube.com/@KasaKorovaClub?si=b4NAPfq-a_Ar5ojB" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/korova.club?igsh=MTRrNzA0dHMweXk5ZQ==" target="_blank"><i class="fa fa-instagram"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <div class="footer__newslatter">
+                        <h4>Noticias</h4>
+                        <form action="https://formsubmit.co/servipcpal@gmail.com" method="post">
+                            <input type="text" placeholder="Nombre Completo" name="nombre" required>
+                            <input type="email" placeholder="Correo electrónico" name="correo" size="30" required>
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			<div class="footer__copyright__text">
+				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://servipcapal.github.io/portafolio.github.io/" target="_blank"><img src="./img/world-wide.png" alt="portafolio">JGT</a></p>
+			</div>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+    </footer>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script>
+        // Variables Globales
+      var tiempo = {}; 
+      var clock = new Date("2024-06-28 9:00:00 PM"); // Obtener la fecha y almacenar en clock
+      var intervalo = window.setInterval(countdown-time, 1); // Frecuencia de actualización
+      var i = 0; // Esta variable me ayudará a definir los estados de intervalo
+      
+      function mostrar_hora(){
+        var now = new Date();  
+        // Inserta la hora almacenada en clock en el span con id hora
+        tiempo.horas = document.getElementById('hora');
+        tiempo.horas.innerHTML = clock.getHours() - now.getHours(); 
+        
+        // Inserta los minutos almacenados en clock en el span con id minuto
+        tiempo.minuto = document.getElementById('minuto');
+        tiempo.minuto.innerHTML = clock.getMinutes()+60 - now.getMinutes();
+        
+        // Inserta los segundos almacenados en clock en el span con id segundo
+        tiempo.segundos = document.getElementById('segundo')
+        tiempo.segundos.innerHTML = "0" + clock.getSeconds()+60 - now.getSeconds();
+        
+      
+      }
+      </script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Music Plugin -->
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script src="js/jplayerInit.js"></script>
+
+    <!--FORMULARIO INSCRIPCION-->
+
+    <script>
+        function openForm() {
+          document.getElementById("qr").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("qr").style.display = "none";
+        }
+        </script>
+</body>
+
+</html>
